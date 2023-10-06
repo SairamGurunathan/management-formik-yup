@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Base({children}) {
   return (
@@ -6,9 +7,9 @@ export default function Base({children}) {
       <header>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
+            <Link className="navbar-brand" to="/">
               Zen School
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -23,19 +24,19 @@ export default function Base({children}) {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <Link className="nav-link active" aria-current="page" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/student">
+                  <Link className="nav-link" to="/student">
                     Student
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/teacher">
+                  <Link className="nav-link" to="/teacher">
                     Teacher
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

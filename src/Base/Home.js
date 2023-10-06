@@ -1,5 +1,6 @@
 import React from "react";
 import Base from "./Base";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -9,18 +10,18 @@ export default function Home() {
           <div className="home-data">
             <h1 className="home-text">OUR SCHOOL STUDENT</h1>
             
-            <button className="btn btn-warning"><a className="nav-link" href="/student">
+            <button className="btn btn-warning"><Link className="nav-link" to="/student">
                     Student
-                  </a></button>
+                  </Link></button>
           </div>
         </div>
         <div className="col">
           <div className="home-data">
             <h1 className="home-text">OUR SCHOOL TEACHER</h1>
             
-            <button className="btn btn-success"><a className="nav-link" href="/teacher">
+            <button className="btn btn-success"><Link className="nav-link" to="/teacher">
                     Teacher
-                  </a></button>
+                  </Link></button>
           </div>
         </div>
       </div>
